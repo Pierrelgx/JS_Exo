@@ -42,7 +42,6 @@ redText();
 
 // Exercice 4
 // Magie aussi, en green cette fois, mais possible de revenir en arrière, c'est de la magiiiiiie !
-
    let editCardButtonTwo = document.querySelectorAll(".btn-outline-secondary")[1];
    let textCardTwo = document.querySelectorAll(".card-text")[1] ;
         editCardButtonTwo.addEventListener("click", function() {
@@ -56,4 +55,13 @@ redText();
 
 // Exercice 5
 // Le nucléaire attention c'est dangereux ☢️
+let header = document.getElementsByTagName("header")[0];
+let boostrap = document.querySelector("link");
 
+header.addEventListener("dblclick", function(){
+  if (boostrap.href === "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"){
+    boostrap.setAttribute("href", "" );
+  }else{
+    boostrap.setAttribute("href", "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+  };
+});
