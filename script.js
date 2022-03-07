@@ -27,13 +27,13 @@ hamburgerMenu()
 
 
  // Exercie 3
- // On fait de la magiiiiie en changeant la couleur tu text en ROUGE 😎
+ // On fait de la magiiiiie en changeant la couleur du text en ROUGE 😎
 
  function redText() {
-	editCardButtonOne = document.querySelectorAll(".btn-outline-secondary")[0]
-	textCardOne = document.querySelectorAll(".card-text")[0]
+	editCardButtonOne = document.querySelectorAll(".btn-outline-secondary")[0] ;
+	textCardOne = document.querySelectorAll(".card-text")[0] ;
 	editCardButtonOne.addEventListener("click", function() {
-		textCardOne.style.color = "red"
+		textCardOne.style.color = "red";
 	})
 }
 
@@ -42,14 +42,17 @@ redText()
 
 // Exercice 4
 // Magie aussi, en green cette fois, mais possible de revenir en arrière, avec un toggle !
-
+function greenText () {
+    editCardButtonTwo = document.querySelectorAll(".btn-outline-secondary") [1];
+    textCardTwo = document.querySelectorAll(".card-text") [1] ;
+    editCardButtonTwo.addEventListener("click", function() {
+        textCardTwo.style.color = "green"
+    })
+    
+}
+greenText()
 
 
 // Exercice 5
 // Le nucléaire attention c'est dangereux ☢️
 
-var p = document.querySelectorAll('p')
-var rougit = function() {
-    p.classList.add('red')
-}
-p.addEventListener('click', rougit)
