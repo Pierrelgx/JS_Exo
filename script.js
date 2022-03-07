@@ -34,23 +34,24 @@ hamburgerMenu()
 	textCardOne = document.querySelectorAll(".card-text")[0] ;
 	editCardButtonOne.addEventListener("click", function() {
 		textCardOne.style.color = "red";
-	})
-}
+	});
+};
 
-redText()
+redText();
  
 
 // Exercice 4
-// Magie aussi, en green cette fois, mais possible de revenir en arrière, avec un toggle !
-function greenText () {
-    editCardButtonTwo = document.querySelectorAll(".btn-outline-secondary") [1];
-    textCardTwo = document.querySelectorAll(".card-text") [1] ;
-    editCardButtonTwo.addEventListener("click", function() {
-        textCardTwo.style.color = "green"
-    })
-    
-}
-greenText()
+// Magie aussi, en green cette fois, mais possible de revenir en arrière, c'est de la magiiiiiie !
+
+   let editCardButtonTwo = document.querySelectorAll(".btn-outline-secondary")[1];
+   let textCardTwo = document.querySelectorAll(".card-text")[1] ;
+        editCardButtonTwo.addEventListener("click", function() {
+        if  (textCardTwo.style.color === "green") {
+              textCardTwo.style.color = "";
+         } else {
+             textCardTwo.style.color = "green";
+      };
+    });
 
 
 // Exercice 5
