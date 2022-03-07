@@ -56,12 +56,12 @@ redText();
 // Exercice 5
 // Le nucléaire attention c'est dangereux ☢️
 let header = document.getElementsByTagName("header")[0];
-let boostrap = document.querySelector("link");
+let lien = document.querySelector("link");
 
 header.addEventListener("dblclick", function(){
-  if (boostrap.href === "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"){
-    boostrap.setAttribute("href", "" );
+  if (lien.href === "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"){
+    lien.setAttribute("href", "" );
   }else{
-    boostrap.setAttribute("href", "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+    lien.setAttribute("href", "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
   };
 });
