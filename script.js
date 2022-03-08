@@ -2,15 +2,20 @@
 
 // Exercice 1
 // On affiche une popup lorsqu'on clique sur le footer, avec un compteur dans la console
-function footerAlert() {
-	footer = document.querySelector("footer")
-	i = 1
-	footer.addEventListener("click", function() {
-		alert("🔥 Bravooo, tu as réussi à cliqueyyyy. Ici c'est le clique numéro " + i)
-		i++
-	})
-    }
- footerAlert()
+let footer = document.querySelector("footer");
+let clic = 0
+
+footer.addEventListener("click",function(){
+  console.log("cliqued ! Yeaaaah MFB");
+});
+
+//FONCTIONNALITÉ 1-bis
+
+footer.addEventListener("click",function(){
+  clic += 1;
+  console.log("🔥Bravo tu as cliqueyyyyyy ! Ici c'est le numéro " + clic);
+});
+
 
   
  // Exercice 2
